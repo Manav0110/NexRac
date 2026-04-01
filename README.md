@@ -18,6 +18,40 @@ NexRec is a full-stack recommendation platform that helps users discover content
 - Auth: JSON Web Tokens, bcryptjs
 - Data: Local JSON user store plus API-backed content sources
 
+## Architecture
+
+NexRec follows a simple client-server architecture with a recommendation layer in the backend.
+
+```text
++-------------------+        HTTP / JSON        +----------------------+
+| React + Vite      |  --------------------->  | Express API Server   |
+| Frontend          |                          |                      |
+|                   |  <---------------------  | Auth + Content APIs  |
++-------------------+        Responses         +----------+-----------+
+                                                         |
+                                                         |
+                                              +----------v-----------+
+                                              | Recommendation       |
+                                              | Engine               |
+                                              +----------+-----------+
+                                                         |
+                                +------------------------+------------------------+
+                                |                         |                        |
+                        +-------v--------+        +-------v--------+       +------v-------+
+                        | users.json     |        | Mock Content   |       | External APIs |
+                        | Local User DB  |        | + Local Data   |       | TMDB, YouTube |
+                        +----------------+        +----------------+       | News, iTunes  |
+                                                                           +--------------+
+```
+
+### Flow Overview
+
+- The React frontend handles routing, onboarding, authentication state, search, and recommendation views.
+- The Express backend exposes REST endpoints for authentication, content fetching, and recommendation generation.
+- The recommendation engine processes user preferences, liked items, and history to return personalized results.
+- User account data is stored locally in `server/data/users.json` for development.
+- Content is served from both local mock data and external providers such as TMDB, YouTube, NewsAPI, and iTunes.
+
 ## Project Structure
 
 ```text
