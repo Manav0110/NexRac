@@ -1,0 +1,75 @@
+[
+  {
+    "id": "user_1775039290146_zdz1q6",
+    "name": "Test User",
+    "email": "test@nexrec.com",
+    "password": "$2b$12$MsV1BEBeJIVT6ntoxDrbmePqwZNKWHKCAv.IQ6BFh4OhvwjW7bZqO",
+    "preferences": {
+      "likedGenres": [],
+      "likedDomains": [],
+      "likedTags": [],
+      "dislikedGenres": []
+    },
+    "onboardingDone": false,
+    "createdAt": "2026-04-01T10:28:10.146Z",
+    "lastLoginAt": "2026-04-01T10:28:41.614Z"
+  },
+  {
+    "id": "user_1775039668704_0i65ok",
+    "name": "abcd",
+    "email": "abc@gmail.com",
+    "password": "$2b$12$BurRVe.unmCVg31SLAZ4gefRq6sY4uE70uRwn/8GY21JfOoxaiH2q",
+    "preferences": {
+      "likedGenres": [
+        "action",
+        "comedy",
+        "drama",
+        "science",
+        "technology"
+      ],
+      "likedDomains": [
+        "movies",
+        "podcasts",
+        "videos",
+        "news",
+        "music"
+      ],
+      "likedTags": [
+        "chill",
+        "upbeat",
+        "motivational",
+        "mysterious",
+        "fun"
+      ],
+      "dislikedGenres": []
+    },
+    "onboardingDone": true,
+    "createdAt": "2026-04-01T10:34:28.704Z"
+  },
+  {
+    "id": "user_1775041287573_2dmaj8",
+    "name": "efgh",
+    "email": "efgh@gmail.com",
+    "password": "$2b$12$XMyR8.a50zlqecY3ykwo0eZ4.SnGbEub/zx37Mpt990F78z0Xx1ia",
+    "preferences": {
+      "likedGenres": [
+        "action",
+        "science"
+      ],
+      "likedDomains": [
+        "news",
+        "videos",
+        "podcasts",
+        "music",
+        "movies"
+      ],
+      "likedTags": [
+        "chill",
+        "mysterious"
+      ],
+      "dislikedGenres": []
+    },
+    "onboardingDone": true,
+    "createdAt": "2026-04-01T11:01:27.573Z"
+  }
+]
